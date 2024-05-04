@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[data-theme="Sunny"] {
+  --background-color: #f7ca4e;
+  --link-color: #28afb0;
+  --link-hover-color: #19647e;
+  --header-color: #1f271b;
+  --text-color: #ef6f6c;
+  --border-color: #2b3a67;
+}
+body[data-theme="Rainy"] {
+  --background-color: #a7a7a7;
+  --link-color: #4f772d;
+  --link-hover-color: #31572c;
+  --header-color: #615e97;
+  --text-color: #3a863a;
+  --border-color: #216869;
+}
+body[data-theme="Cloudy"] {
+  --background-color: #a7a7a7;
+  --link-color: #51291e;
+  --link-hover-color: #301014;
+  --header-color: #1c3738;
+  --text-color: #005c69;
+  --border-color: #6369d1;
+}
+body[data-theme="Snowy"] {
+  --background-color: #cdd0eb;
+  --link-color: #ffee93;
+  --link-hover-color: #fcf5c7;
+  --header-color: #fcf5c7;
+  --text-color: #32533d;
+  --border-color: #e3e7af;
+}
+body[data-theme="Stormy"] {
+  --background-color: #6a6a6a;
+  --link-color: #d0fcb3;
+  --link-hover-color: #9bc59d;
+  --header-color: #84d2f6;
+  --text-color: #c8ad55;
+  --border-color: #ffa630;
+}
+
+#root {
+  border: 2px solid var(--border-color);
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Fira sans", sans-serif;
+  color: var(--text-color);
+}
+
+a {
+  font-family: "Fira sans", sans-serif;
+  font-weight: 500;
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--link-hover-color);
+}
+
+h1 {
+  color: var(--header-color);
+  font-family: "Reddit sans", sans-serif;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
